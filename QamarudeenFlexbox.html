@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flexbox Layout</title>
+  <style>
+    
+     h1 {
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 5px;
+        box-sizing: border-box;
+        text-align: center; 
+        font-size: 30px;
+        color: blue;
+    }
+    h2 {
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 15px;
+        box-sizing: border-box;
+        text-align: center; 
+        font-size: 15px;
+        color: blue;
+    }
+        
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: blue;
+        padding: 20px;
+        color: white;
+        width: 100%;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 15px;
+    }
+    nav ul li a {
+       text-decoration: none;
+       padding: 10px;
+       color: white !important;  
+       border-radius: 10px;
+       justify-content: space-evenly;
+       font-size: 20px;
+       flex-flow: row wrap;
+    }
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        justify-content: center;
+        
+    }
+    .section {
+      min-width: 250px;
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      color: green;
+    }
+
+    .section.blog {
+      flex: 1;
+      background-color: #f8f9fa;
+    }
+
+    .section.content{
+      flex: 3;
+      background-color: #e9ecef;
+    }
+    .section.news {
+      flex: 1;
+      background-color: #f8f9fa;
+    }
+    .section h3 {
+      margin-bottom: 10px;
+    }
+    #Login {
+      position: absolute;
+      right: 0;
+    }
+    h3 {
+      text-align: center;
+    }
+  
+  footer {
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  background: blue;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  
+}
+  </style>
+</head>
+<body>
+  <div>
+    <h1>SETMAN SOLUTION THESIS RESERACH SITE</h1>
+    <h2>Web development research portal for aspiring young scholars for their thesis</h2>
+  </div>
+    <div class="container">
+        <nav>
+            <ul>
+                <li class="nav-item"> <a href="#home">Home</a></li>
+                <li class="nav-item"> <a href="#journals">Journal</a></li>
+                <li class="nav-item"> <a href="#news">News</a></li>
+                <li class="nav-item"> <a href="#notification">Notification</a></li>
+                <li class="nav-item" id="Login"> <a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+     <!-- MAIN CONTENT -->
+    <div class="main">
+    <div class="section blog">
+      <h3>Blog</h3>
+      <p>This is the blog content area. <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur fugit deleniti laboriosam tempore cupiditate voluptatum, ratione sunt minus quo impedit! Dolor cum voluptatum cumque, laborum esse voluptate repudiandae similique nihil?
+      </p>
+    </div>
+    <div class="section content">
+      <h3>Main Content</h3>
+      <p>This is the main content area. <br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur quaerat eum possimus, facere velit sed distinctio reprehenderit vero? Error, vel temporibus? Maiores dolorem dignissimos facere beatae ratione officia repellendus tempora facilis doloremque omnis ad consequatur nemo voluptatibus odio numquam iusto unde, corrupti tempore? Dolore optio sit voluptatem! Ducimus excepturi totam iste repellendus at quos alias inventore veniam ea odio, perferendis nemo molestiae laudantium, magni minus. Doloremque saepe excepturi, possimus necessitatibus, minima aspernatur cupiditate voluptatum voluptates delectus officiis fugit dolorem temporibus alias? 
+        Veniam iste expedita optio nesciunt illum dolorum unde voluptas beatae nemo, enim praesentium ratione sunt impedit fuga culpa tempora.
+      </p>
+    </div>
+    <div class="section news">
+      <h3>News</h3>
+      <p>This is the news content area. <br>
+         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae veritatis sed illum perferendis consequatur neque tempora accusantium excepturi repellat rem? 
+         Vel suscipit ex quia ipsam? Totam eligendi labore sit dignissimos.
+      </p>
+    </div>
+  </div> 
+
+
+  <footer>
+    <p>&copy; 2025 AhmadQamarudeen</p>
+  </footer>
+</body>
+</html>
+    
